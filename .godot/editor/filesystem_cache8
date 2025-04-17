@@ -1,0 +1,19 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1744925007
+README.md::TextFile::-1::1744924980::0::1::::<><>::
+::res://assets/::1744923559
+Winter Trendy.ttf::FontFile::5612770241863358465::1744923553::1744925089::1::::<><>::
+::res://assets/images/::1744923558
+BG_01.png::CompressedTexture2D::3918446704322917487::1744922954::1744925090::1::::<><>::
+godot file 2.png::CompressedTexture2D::7249421414859638080::1744916512::1744925091::1::::<><>::
+icon.svg::CompressedTexture2D::3454717831056249553::1744829818::1744925089::1::::<><>::
+::res://levels/::1744862536
+::res://scenes/::1744924957
+level1.tscn::PackedScene::4050437281353418882::1744924674::0::1::::<><>::
+level2.tscn::PackedScene::2656488054223674996::1744924674::0::1::::<><>::
+level3.tscn::PackedScene::8415868638230450749::1744924957::0::1::::<><>::
+main_manu.tscn::PackedScene::8854163223543125175::1744924674::0::1::::<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf
+splash_screen_manager.tscn::PackedScene::4330619208763095514::1744924147::0::1::::<><>::res://scripts/splash_screen_manager.gd<>uid://dbjw580r07tae::::res://assets/images/godot file 2.png
+::res://scripts/::1744924540
+main_manu.gd::GDScript::-1::1744924540::0::1::::<>Control<>::
+splash_screen_manager.gd::GDScript::-1::1744917169::0::1::::<>Control<>::

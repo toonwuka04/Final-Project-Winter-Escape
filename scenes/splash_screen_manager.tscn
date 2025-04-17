@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2x1wvq8lpx27"]
+
+[ext_resource type="Script" path="res://scripts/splash_screen_manager.gd" id="1_6lxcs"]
+[ext_resource type="Texture2D" uid="uid://dbjw580r07tae" path="res://assets/images/godot file 2.png" id="2_60y0b"]
+
+[node name="Node2D" type="Control" node_paths=PackedStringArray("splash_screen")]
+layout_mode = 3
+anchor_right = 6.69
+anchor_bottom = 3.827
+offset_right = -7706.88
+offset_bottom = -2479.9
+script = ExtResource("1_6lxcs")
+splash_screen = NodePath("CenterContainer/TextureRect")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+offset_right = 7395.0
+offset_bottom = 2248.0
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+offset_right = 7395.0
+offset_bottom = 2248.0
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_60y0b")
