@@ -2,3 +2,5 @@ res://scenes/level1.tscn
 res://scenes/main_manu.tscn
 res://scenes/player.tscn
 res://scripts/player.gd
+res://scripts/killzone.gd
+res://scenes/killzone.tscn

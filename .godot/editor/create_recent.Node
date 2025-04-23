@@ -1,5 +1,7 @@
+Timer
+CollisionShape2D
+Area2D
 ColorRect
 TileMapLayer
-CollisionShape2D
 StaticBody2D
 Camera2D
