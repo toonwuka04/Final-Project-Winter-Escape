@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2x1wvq8lpx27"]
 
-[ext_resource type="Script" path="res://scripts/splash_screen_manager.gd" id="1_6lxcs"]
+[ext_resource type="Script" uid="uid://j7pl40yhcjfp" path="res://scripts/splash_screen_manager.gd" id="1_6lxcs"]
 [ext_resource type="Texture2D" uid="uid://dbjw580r07tae" path="res://assets/images/godot file 2.png" id="2_60y0b"]
 
 [node name="Node2D" type="Control" node_paths=PackedStringArray("splash_screen")]

@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://bv3eik512ddgp" path="res://assets/images/BG_01.png" id="2_ecwcl"]
 [ext_resource type="Texture2D" uid="uid://nflbqm4bdcr3" path="res://assets/wintertiles/Enviroment.png" id="3_fkwb5"]
 [ext_resource type="PackedScene" uid="uid://bk3dx3u0lho34" path="res://scenes/killzone.tscn" id="5_dr225"]
-[ext_resource type="AudioStream" uid="uid://beyxnl1iju0w2" path="res://assets/adrenaline-gameplay-264085.mp3" id="6_crhgb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60737"]
 texture = ExtResource("2_ecwcl")
@@ -9078,6 +9077,9 @@ sources/2 = SubResource("TileSetAtlasSource_ioaje")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r47x0"]
 
+[sub_resource type="Resource" id="Resource_alqfr"]
+metadata/__load_path__ = "res://assets/adrenaline-gameplay-264085.mp3"
+
 [node name="Level2" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -9131,6 +9133,6 @@ position = Vector2(600, 200)
 shape = SubResource("WorldBoundaryShape2D_r47x0")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_crhgb")
+stream = SubResource("Resource_alqfr")
 volume_db = 1.0
 autoplay = true
