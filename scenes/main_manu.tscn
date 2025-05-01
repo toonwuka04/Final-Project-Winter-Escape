@@ -1,8 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://dyfa1lsd4vb4b"]
 
 [ext_resource type="Texture2D" uid="uid://bv3eik512ddgp" path="res://assets/images/BG_01.png" id="1_ohc0q"]
-[ext_resource type="Script" uid="uid://c55rl032iwk1i" path="res://scripts/main_manu.gd" id="1_va6os"]
+[ext_resource type="Script" path="res://scripts/main_manu.gd" id="1_va6os"]
 [ext_resource type="FontFile" uid="uid://cl74rg03hnhcj" path="res://assets/Winter Trendy.ttf" id="2_nxa16"]
+[ext_resource type="AudioStream" uid="uid://4ayawl51s4rr" path="res://assets/epic-cinematic-intense-background-music-301216.mp3" id="4_nyorx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glsw8"]
 texture = ExtResource("1_ohc0q")
@@ -36,9 +37,6 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
-
-[sub_resource type="Resource" id="Resource_501nv"]
-metadata/__load_path__ = "res://assets/epic-cinematic-intense-background-music-301216.mp3"
 
 [node name="MainManu" type="Control"]
 layout_mode = 3
@@ -138,7 +136,7 @@ vertical_alignment = 1
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(1, 0)
-stream = SubResource("Resource_501nv")
+stream = ExtResource("4_nyorx")
 volume_db = 1.0
 autoplay = true
 
