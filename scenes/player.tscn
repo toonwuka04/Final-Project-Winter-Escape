@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://bdavk4m3x58kq"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_1i0rd"]
+[ext_resource type="Script" uid="uid://x2bve631gd3o" path="res://scripts/player.gd" id="1_1i0rd"]
 [ext_resource type="Texture2D" uid="uid://cyjlfu8tj2mf5" path="res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Idle.png" id="1_evbg6"]
 [ext_resource type="Texture2D" uid="uid://da688elg0tqfr" path="res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Walk.png" id="3_lnt25"]
 

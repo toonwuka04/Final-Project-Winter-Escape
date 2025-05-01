@@ -1,7 +1,8 @@
-res://scenes/level2.tscn
-res://scenes/main_manu.tscn
-res://scenes/player.tscn
+res://scenes/killzone.tscn
 res://scenes/level1.tscn
+res://scenes/level2.tscn
 res://scenes/level3.tscn
-res://scripts/next_level.gd
+res://scenes/main_manu.tscn
 res://scenes/next_level.tscn
+res://scenes/player.tscn
+res://scenes/splash_screen_manager.tscn
