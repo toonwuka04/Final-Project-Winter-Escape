@@ -17,7 +17,6 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("chat"):
 		$Dialogue.start()
-		#print("is chatting with npc")
 		is_chatting = true
 
 
