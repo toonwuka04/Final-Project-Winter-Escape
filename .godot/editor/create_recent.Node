@@ -1,6 +1,11 @@
+Button
 RichTextLabel
-NinePatchRect
+Label
+Panel
 Control
+VBoxContainer
+CanvasGroup
+NinePatchRect
 CollisionShape2D
 Timer
 Area2D
@@ -8,6 +13,3 @@ AnimatedSprite2D
 CharacterBody2D
 TileMapLayer
 Sprite2D
-ColorRect
-StaticBody2D
-Camera2D

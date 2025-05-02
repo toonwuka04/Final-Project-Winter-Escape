@@ -2,3 +2,6 @@ res://scenes/level1.tscn
 res://scenes/npc.tscn
 res://dialogue/dialogue.tscn
 res://scenes/main_manu.tscn
+res://scripts/how_to_play.gd
+res://scripts/main_manu.gd
+res://scenes/how_to_play.tscn

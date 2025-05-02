@@ -39,6 +39,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
 [node name="MainManu" type="Control"]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -85,7 +86,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gpms2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_627fs")
 text = "Start Game"
 
-[node name="Options" type="Button" parent="VBoxContainer"]
+[node name="Instructions" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -141,5 +142,5 @@ volume_db = 1.0
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Instructions" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

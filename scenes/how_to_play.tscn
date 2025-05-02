@@ -1,0 +1,79 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqcp1j7uq74ca"]
+
+[ext_resource type="Script" path="res://scripts/how_to_play.gd" id="1_7xqkc"]
+
+[sub_resource type="GDScript" id="GDScript_vc7r1"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="How To Play" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7xqkc")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -383.5
+offset_top = -233.0
+offset_right = 383.5
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center][b][font_size=24]GAME CONTROLS[/font_size][/b][/center]
+
+[indent]
+• [b]Move Left:[/b]  [color=yellow]A Key[/color] or [color=yellow]← Arrow[/color]
+• [b]Move Right:[/b] [color=yellow]D Key[/color] or [color=yellow]→ Arrow[/color]
+• [b]Jump:[/b]      [color=yellow]W Key[/color] or [color=yellow]↑ Arrow[/color]
+• [b]Interact:[/b]  [color=yellow]E Key[/color]
+• [b]Continue Dialogue:[/b] [color=yellow]SPACE[/color]
+[/indent]
+
+[center][b][font_size=24]HOW TO PLAY[/font_size][/b][/center]
+[indent]
+1. Use movement keys to explore
+2. Press [color=yellow]E[/color] near objects/NPCs to interact
+3. Press [color=yellow]SPACE[/color] to advance conversations
+4. Jump over obstacles to reach new areas
+[/indent]"
+
+[node name="CloseButton" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 1033.0
+offset_top = 36.0
+offset_right = 1094.0
+offset_bottom = 93.0
+text = "X"
+script = SubResource("GDScript_vc7r1")
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_button_pressed"]
