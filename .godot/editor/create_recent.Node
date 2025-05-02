@@ -1,9 +1,13 @@
-TileMapLayer
+RichTextLabel
+NinePatchRect
+Control
 CollisionShape2D
-AnimatedSprite2D
-Sprite2D
-Area2D
 Timer
+Area2D
+AnimatedSprite2D
+CharacterBody2D
+TileMapLayer
+Sprite2D
 ColorRect
 StaticBody2D
 Camera2D

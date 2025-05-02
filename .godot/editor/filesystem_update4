@@ -4,3 +4,8 @@ res://scenes/main_manu.tscn
 res://scenes/level3.tscn
 res://scenes/next_level.tscn
 res://scenes/player.tscn
+res://scenes/npc.tscn
+res://scripts/npc.gd
+res://dialogue/dialogue.tscn
+res://dialogue/guide_dialogue1.json
+res://dialogue/dialogueplayer.gd
