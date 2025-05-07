@@ -1,10 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746213303
+::res://::1746466214
 README.md::TextFile::-1::1745946860::0::1::::<><>::
-::res://assets/::1746162400
-adrenaline-gameplay-264085.mp3::AudioStreamMP3::8869832127708922278::1746124967::1746137778::1::::<><>::
-background-music-soft-calm-333111.mp3::AudioStreamMP3::3528496083047818053::1746124967::1746137778::1::::<><>::
-epic-cinematic-intense-background-music-301216.mp3::AudioStreamMP3::2036934847234435063::1746124967::1746137778::1::::<><>::
+::res://assets/::1746310181
 flower-asset.jpg::CompressedTexture2D::6804694432735429477::1745124885::1745181818::1::::<><>::
 other-loot-asset.jpg::CompressedTexture2D::9098398946254692621::1745124885::1745181818::1::::<><>::
 queen-asset.jpg::CompressedTexture2D::6433246346838890803::1745124885::1745181818::1::::<><>::
@@ -125,24 +122,26 @@ star.png::CompressedTexture2D::5745554993502997175::1746076243::1746076244::1:::
 360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg::CompressedTexture2D::2381596306183074898::1745946860::1745946868::1::::<><>::
 Enviroment.png::CompressedTexture2D::923447389009395630::1745182446::1745182446::1::::<><>::
 game_background_3. 2.png::CompressedTexture2D::5131471851427146493::1745434149::1745434150::1::::<><>::
-::res://dialogue/::1746213194
-dialogue.tscn::PackedScene::6221527311047498299::1746213194::0::1::::<><>::res://dialogue/dialogueplayer.gd<>uid://crw5d6f3ppppr::::res://assets/images/dialogueasset.png
+::res://dialogue/::1746227447
+dialogue.tscn::PackedScene::6221527311047498299::1746227447::0::1::::<><>::res://dialogue/dialogueplayer.gd<>uid://crw5d6f3ppppr::::res://assets/images/dialogueasset.png
 dialogueplayer.gd::GDScript::-1::1746166211::0::1::::<>Control<>::
 guide_dialogue1.json::JSON::-1::1746165757::0::1::::<><>::
 ::res://levels/::1744925424
-::res://scenes/::1746213194
+::res://scenes/::1746227500
+how_to_play.tscn::PackedScene::3514528646018036792::1746227498::0::1::::<><>::res://scripts/how_to_play.gd
 killzone.tscn::PackedScene::3146336424125980565::1746137577::0::1::::<><>::uid://boj7lmry8hor0::::res://scripts/killzone.gd
-level1.tscn::PackedScene::4050437281353418882::1746213194::0::1::::<><>::uid://cfdyud8hncm7n::::res://assets/wintertiles/game_background_3. 2.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://h12cppjerxf2::::res://scenes/npc.tscn
+level1.tscn::PackedScene::4050437281353418882::1746227447::0::1::::<><>::uid://cfdyud8hncm7n::::res://assets/wintertiles/game_background_3. 2.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://h12cppjerxf2::::res://scenes/npc.tscn
 level2.tscn::PackedScene::2656488054223674996::1746160991::0::1::::<><>::uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://86wsp7hogouc::::res://assets/wintertiles/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg<>uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn
 level3.tscn::PackedScene::8415868638230450749::1746160991::0::1::::<><>::uid://caol7tpctq3oc::::res://assets/images/level3bg.jpg<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png
-main_manu.tscn::PackedScene::8854163223543125175::1746213194::0::1::::<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf<>uid://4ayawl51s4rr::::res://assets/epic-cinematic-intense-background-music-301216.mp3
+main_manu.tscn::PackedScene::8854163223543125175::1746227500::0::1::::<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf<>uid://4ayawl51s4rr::::res://assets/epic-cinematic-intense-background-music-301216.mp3
 next_level.tscn::PackedScene::1778011015392543923::1746160991::0::1::::<><>::res://scripts/next_level.gd<>uid://cn4gplyfwsxf8::::res://assets/images/star.png
-npc.tscn::PackedScene::546639468901562697::1746213194::0::1::::<><>::uid://b2nbe1ahupmel::::res://assets/images/NPC_Ronin.png<>res://scripts/npc.gd<>uid://cuv0v7t7qk268::::res://dialogue/dialogue.tscn
+npc.tscn::PackedScene::546639468901562697::1746227447::0::1::::<><>::uid://b2nbe1ahupmel::::res://assets/images/NPC_Ronin.png<>res://scripts/npc.gd<>uid://cuv0v7t7qk268::::res://dialogue/dialogue.tscn
 player.tscn::PackedScene::2598281672413295304::1746160991::0::1::::<><>::res://scripts/player.gd<>uid://cyjlfu8tj2mf5::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Idle.png<>uid://da688elg0tqfr::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Walk.png
 splash_screen_manager.tscn::PackedScene::4330619208763095514::1746137577::0::1::::<><>::uid://j7pl40yhcjfp::::res://scripts/splash_screen_manager.gd<>uid://dbjw580r07tae::::res://assets/images/godot file 2.png
-::res://scripts/::1746213212
+::res://scripts/::1746227437
+how_to_play.gd::GDScript::-1::1746227279::0::1::::<>Control<>::
 killzone.gd::GDScript::-1::1745438831::0::1::::<>Area2D<>::
-main_manu.gd::GDScript::-1::1744924540::0::1::::<>Control<>::
+main_manu.gd::GDScript::-1::1746224861::0::1::::<>Control<>::
 next_level.gd::GDScript::-1::1746137577::0::1::::<>Area2D<>::
 npc.gd::GDScript::-1::1746166505::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1746213194::0::1::::<>CharacterBody2D<>::
