@@ -2,3 +2,9 @@ res://scenes/level1.tscn
 res://scenes/npc.tscn
 res://dialogue/dialogue.tscn
 res://scenes/main_manu.tscn
+res://boss1.gd
+res://scenes/boss1.tscn
+res://scenes/player.tscn
+res://scripts/npc.gd
+res://scripts/player.gd
+res://scripts/killzone.gd

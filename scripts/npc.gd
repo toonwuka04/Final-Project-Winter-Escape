@@ -15,7 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$AnimatedSprite2D.play("idle")
 	
-	if Input.is_action_just_pressed("chat"):
+	if Input.is_action_just_pressed("chat") and player_is_in_chat:
 		$Dialogue.start()
 		is_chatting = true
 
