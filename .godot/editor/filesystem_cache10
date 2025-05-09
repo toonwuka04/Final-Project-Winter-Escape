@@ -1,14 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746822190
-boss1.gd::GDScript/GDScript::2128964343282618646::1746803669::0::1::::<>CharacterBody2D<><>0<>0<><>::
-boss_2.gd::GDScript/GDScript::2255313276508803260::1746803669::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1746823900
+boss1.gd::GDScript::2128964343282618646::1746823509::0::1::::<>CharacterBody2D<><>0<>0<><>::
+bossLvl3.tscn::PackedScene::166693900099892380::1746823509::0::1::::<><><>0<>0<><>::uid://b6vah1w33y4pl::::res://scenes/bossLvl3.gd<>uid://bmrrhfj5gc0nj::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png<>uid://dqdq0w8w00lk7::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png<>uid://debqgmuhmc2sg::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png<>uid://b1yen8xsi8p2w::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Run.png<>uid://c1s10skpwp8xc::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Walk.png
+boss_2.gd::GDScript::2255313276508803260::1746823509::0::1::::<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1746124903::0::1::::<><><>0<>0<><>::
-bossLvl3.tscn::PackedScene::166693900099892380::1746822190::0::1::::<><><>0<>0<><>::uid://b6vah1w33y4pl::::res://scenes/bossLvl3.gd<>uid://bmrrhfj5gc0nj::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png<>uid://dqdq0w8w00lk7::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png<>uid://debqgmuhmc2sg::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png<>uid://b1yen8xsi8p2w::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Run.png<>uid://c1s10skpwp8xc::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Walk.png
-::res://assets/::1746803711
+::res://assets/::1746823509
 flower-asset.jpg::CompressedTexture2D/CompressedTexture2D::6804694432735429477::1745479239::1746124931::1::::<><><>0<>0<>2122238137581a66873b2bfdee8bebc8<>res://.godot/imported/flower-asset.jpg-20af44a63aa4fc1599dafcca98267295.ctex::
 other-loot-asset.jpg::CompressedTexture2D/CompressedTexture2D::9098398946254692621::1745479239::1746124931::1::::<><><>0<>0<>c6c2812fbfbe31df3a26fe3b033343ef<>res://.godot/imported/other-loot-asset.jpg-60f715e2e344302159c11c470cb2cdbc.ctex::
 queen-asset.jpg::CompressedTexture2D/CompressedTexture2D::6433246346838890803::1745479239::1746124931::1::::<><><>0<>0<>02692bded7544ab9ddae0500d416e03e<>res://.godot/imported/queen-asset.jpg-6df0c2162d4e6a9eae6b6a4b4a9b711e.ctex::
-Winter Trendy.ttf::FontFile/FontFile::5612770241863358465::1745479239::1746803711::1::::<><><>0<>0<>dd62f91754fdfc45b98c90ae121a2427<>res://.godot/imported/Winter Trendy.ttf-c27b4ffb80650ff31a9f9e7388ae68b9.fontdata::
+Winter Trendy.ttf::FontFile/FontFile::5612770241863358465::1745479239::1746823509::1::::<><><>0<>0<>dd62f91754fdfc45b98c90ae121a2427<>res://.godot/imported/Winter Trendy.ttf-c27b4ffb80650ff31a9f9e7388ae68b9.fontdata::
 ::res://assets/Free-City-Trader-Character-Sprite-Sheets-Pixel-Art/::1746135106
 ::res://assets/Free-City-Trader-Character-Sprite-Sheets-Pixel-Art/PSD/::1746124903
 ::res://assets/Free-City-Trader-Character-Sprite-Sheets-Pixel-Art/Trader_1/::1746124932
@@ -125,28 +125,27 @@ star.png::CompressedTexture2D/CompressedTexture2D::5745554993502997175::17461249
 360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg::CompressedTexture2D/CompressedTexture2D::2381596306183074898::1746124903::1746124930::1::::<><><>0<>0<>91595c8da816ea125e2a1aeeedb3082e<>res://.godot/imported/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg-08e835b755b2d4143b80261ec57a5ade.ctex::
 Enviroment.png::CompressedTexture2D/CompressedTexture2D::923447389009395630::1746124903::1746124930::1::::<><><>0<>0<>444572679b84059e4d7205b7f73ca0cf<>res://.godot/imported/Enviroment.png-1de804dd9ee352cffdc858d9de28783f.ctex::
 game_background_3. 2.png::CompressedTexture2D/CompressedTexture2D::5131471851427146493::1746124903::1746124931::1::::<><><>0<>0<>42ab8cbdac813eb56e18649866efb139<>res://.godot/imported/game_background_3. 2.png-6263f6aa4fa334d05c14660728bc8f15.ctex::
-::res://dialogue/::1746803939
-dialogue.tscn::PackedScene::6221527311047498299::1746803939::0::1::::<><><>0<>0<><>::uid://brhly2k7dhl1a::::res://dialogue/dialogueplayer.gd<>uid://crw5d6f3ppppr::::res://assets/images/dialogueasset.png
+::res://dialogue/::1746823509
+dialogue.tscn::PackedScene::6221527311047498299::1746823509::0::1::::<><><>0<>0<><>::uid://brhly2k7dhl1a::::res://dialogue/dialogueplayer.gd<>uid://crw5d6f3ppppr::::res://assets/images/dialogueasset.png
 dialogueplayer.gd::GDScript/GDScript::3594793850828947976::1746803669::0::1::::<>Control<><>0<>0<><>::
 guide_dialogue1.json::JSON/JSON::-1::1746803669::0::1::::<><><>0<>0<><>::
-::res://scenes/::1746822751
-boss1.tscn::PackedScene::8277771756393488979::1746822751::0::1::::<><><>0<>0<><>::uid://5ljy43jnkki5::::res://boss1.gd<>uid://ovhpek72ssog::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Dead.png<>uid://esjj1nkqo0ar::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Idle.png<>uid://0ffmbv0j52wt::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Walk.png
-boss2.tscn::PackedScene::8666961578482806728::1746803939::0::1::::<><><>0<>0<><>::uid://7eqxei7thotw::::res://boss_2.gd<>uid://ovhpek72ssog::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Dead.png<>uid://esjj1nkqo0ar::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Idle.png<>uid://0ffmbv0j52wt::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Walk.png
-how_to_play.tscn::PackedScene::3514528646018036792::1746803939::0::1::::<><><>0<>0<><>::uid://dhmhy3w2nubq7::::res://scripts/how_to_play.gd
+::res://scenes/::1746823509
+area_2d.gd::GDScript::6798454750606472671::1746823509::0::1::::<>Area2D<><>0<>0<><>::
+boss1.tscn::PackedScene::8277771756393488979::1746823509::0::1::::<><><>0<>0<><>::uid://5ljy43jnkki5::::res://boss1.gd<>uid://ovhpek72ssog::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Dead.png<>uid://esjj1nkqo0ar::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Idle.png<>uid://0ffmbv0j52wt::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Walk.png
+boss2.tscn::PackedScene::8666961578482806728::1746823509::0::1::::<><><>0<>0<><>::uid://7eqxei7thotw::::res://boss_2.gd<>uid://ovhpek72ssog::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Dead.png<>uid://esjj1nkqo0ar::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Idle.png<>uid://0ffmbv0j52wt::::res://assets/Free-Satyr-Sprite-Sheet-Pixel-Art-Pack/Satyr_3/Walk.png
+bossLvl3.gd::GDScript::4605640670768082045::1746823509::0::1::::<>CharacterBody2D<><>0<>0<><>::
+how_to_play.tscn::PackedScene::3514528646018036792::1746823509::0::1::::<><><>0<>0<><>::uid://dhmhy3w2nubq7::::res://scripts/how_to_play.gd
 killzone.tscn::PackedScene::3146336424125980565::1746820179::0::1::::<><><>0<>0<><>::uid://boj7lmry8hor0::::res://scripts/killzone.gd
-level1.tscn::PackedScene::4050437281353418882::1746822750::0::1::::<><><>0<>0<><>::uid://cfdyud8hncm7n::::res://assets/wintertiles/game_background_3. 2.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://h12cppjerxf2::::res://scenes/npc.tscn<>uid://dp62xrj8c3e0r::::res://scenes/boss1.tscn
-level2.tscn::PackedScene::2656488054223674996::1746822751::0::1::::<><><>0<>0<><>::uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://86wsp7hogouc::::res://assets/wintertiles/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg<>uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://dvqludeivnk4o::::res://scenes/boss2.tscn
-level3.tscn::PackedScene::8415868638230450749::1746822750::0::1::::<><><>0<>0<><>::uid://caol7tpctq3oc::::res://assets/images/level3bg.jpg<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://c34hs6jyw1jy2::::res://scenes/area_2d.gd<>uid://0c8m7isir045::::res://scenes/toFinalScene.gd<>uid://cm0ool8qt3bs::::res://bossLvl3.tscn
-main_manu.tscn::PackedScene::8854163223543125175::1746820178::0::1::::<><><>0<>0<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://c55rl032iwk1i::::res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf
-next_level.tscn::PackedScene::1778011015392543923::1746819161::0::1::::<><><>0<>0<><>::uid://bh0q31pxmyfeq::::res://scripts/next_level.gd<>uid://cn4gplyfwsxf8::::res://assets/images/star.png
-npc.tscn::PackedScene::546639468901562697::1746803942::0::1::::<><><>0<>0<><>::uid://b2nbe1ahupmel::::res://assets/images/NPC_Ronin.png<>uid://cq5vahagtpgtq::::res://scripts/npc.gd<>uid://cuv0v7t7qk268::::res://dialogue/dialogue.tscn
-player.tscn::PackedScene::2598281672413295304::1746820179::0::1::::<><><>0<>0<><>::uid://x2bve631gd3o::::res://scripts/player.gd<>uid://cyjlfu8tj2mf5::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Idle.png<>uid://dsnkisr5xx3iv::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Attack.png<>uid://da688elg0tqfr::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Walk.png
-area_2d.gd::GDScript::6798454750606472671::1746818441::0::1::::<>Area2D<><>0<>0<><>::
-final_scene.tscn::PackedScene::1072737593944635385::1746822751::0::1::::<><><>0<>0<><>::
-bossLvl3.gd::GDScript::4605640670768082045::1746822750::0::1::::<>CharacterBody2D<><>0<>0<><>::
-toFinalScene.gd::GDScript::1760876630681947556::1746820061::0::1::::<>Area2D<><>0<>0<><>::
+level1.tscn::PackedScene::4050437281353418882::1746823509::0::1::::<><><>0<>0<><>::uid://cfdyud8hncm7n::::res://assets/wintertiles/game_background_3. 2.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://h12cppjerxf2::::res://scenes/npc.tscn<>uid://dp62xrj8c3e0r::::res://scenes/boss1.tscn
+level2.tscn::PackedScene::2656488054223674996::1746823509::0::1::::<><><>0<>0<><>::uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://86wsp7hogouc::::res://assets/wintertiles/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg<>uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://dvqludeivnk4o::::res://scenes/boss2.tscn
+level3.tscn::PackedScene::8415868638230450749::1746823509::0::1::::<><><>0<>0<><>::uid://caol7tpctq3oc::::res://assets/images/level3bg.jpg<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://c34hs6jyw1jy2::::res://scenes/area_2d.gd<>uid://cm0ool8qt3bs::::res://bossLvl3.tscn
+level4.tscn::PackedScene::1072737593944635385::1746823509::0::1::::<><><>0<>0<><>::
+main_manu.tscn::PackedScene::8854163223543125175::1746823509::0::1::::<><><>0<>0<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://c55rl032iwk1i::::res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf
+next_level.tscn::PackedScene::1778011015392543923::1746823509::0::1::::<><><>0<>0<><>::uid://bh0q31pxmyfeq::::res://scripts/next_level.gd<>uid://cn4gplyfwsxf8::::res://assets/images/star.png
+npc.tscn::PackedScene::546639468901562697::1746823509::0::1::::<><><>0<>0<><>::uid://b2nbe1ahupmel::::res://assets/images/NPC_Ronin.png<>uid://cq5vahagtpgtq::::res://scripts/npc.gd<>uid://cuv0v7t7qk268::::res://dialogue/dialogue.tscn
+player.tscn::PackedScene::2598281672413295304::1746823509::0::1::::<><><>0<>0<><>::uid://x2bve631gd3o::::res://scripts/player.gd<>uid://cyjlfu8tj2mf5::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Idle.png<>uid://dsnkisr5xx3iv::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Attack.png<>uid://da688elg0tqfr::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Walk.png
 splash_screen_manager.tscn::PackedScene::4330619208763095514::1746819161::0::1::::<><><>0<>0<><>::uid://j7pl40yhcjfp::::res://scripts/splash_screen_manager.gd<>uid://dbjw580r07tae::::res://assets/images/godot file 2.png
-::res://scripts/::1746816945
+::res://scripts/::1746823509
 how_to_play.gd::GDScript/GDScript::7675825873481747732::1746803669::0::1::::<>Control<><>0<>0<><>::
 killzone.gd::GDScript/GDScript::3389607139590291099::1746803669::0::1::::<>Area2D<><>0<>0<><>::
 main_manu.gd::GDScript/GDScript::6941491199335552180::1746803669::0::1::::<>Control<><>0<>0<><>::
