@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dyfa1lsd4vb4b"]
 
 [ext_resource type="Texture2D" uid="uid://bv3eik512ddgp" path="res://assets/images/BG_01.png" id="1_ohc0q"]
-[ext_resource type="Script" path="res://scripts/main_manu.gd" id="1_va6os"]
+[ext_resource type="Script" uid="uid://c55rl032iwk1i" path="res://scripts/main_manu.gd" id="1_va6os"]
 [ext_resource type="FontFile" uid="uid://cl74rg03hnhcj" path="res://assets/Winter Trendy.ttf" id="2_nxa16"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glsw8"]
@@ -75,9 +75,9 @@ theme_override_constants/separation = 18
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxEmpty_hqixf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7102p")
@@ -89,9 +89,9 @@ text = "Start Game"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxEmpty_hqixf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7102p")
@@ -103,9 +103,9 @@ text = "Instructions"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxEmpty_hqixf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7102p")

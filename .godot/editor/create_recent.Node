@@ -2,6 +2,8 @@ CollisionShape2D
 Area2D
 AnimatedSprite2D
 CharacterBody2D
+Timer
+Camera2D
 Button
 RichTextLabel
 Label
@@ -10,5 +12,3 @@ Control
 VBoxContainer
 CanvasGroup
 NinePatchRect
-Timer
-TileMapLayer

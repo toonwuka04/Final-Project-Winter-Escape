@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://h12cppjerxf2"]
 
 [ext_resource type="Texture2D" uid="uid://b2nbe1ahupmel" path="res://assets/images/NPC_Ronin.png" id="1_fdc45"]
-[ext_resource type="Script" path="res://scripts/npc.gd" id="1_g6bch"]
+[ext_resource type="Script" uid="uid://cq5vahagtpgtq" path="res://scripts/npc.gd" id="1_g6bch"]
 [ext_resource type="PackedScene" uid="uid://cuv0v7t7qk268" path="res://dialogue/dialogue.tscn" id="3_phx1v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_40og7"]

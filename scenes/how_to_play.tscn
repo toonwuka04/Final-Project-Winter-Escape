@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bqcp1j7uq74ca"]
 
-[ext_resource type="Script" path="res://scripts/how_to_play.gd" id="1_7xqkc"]
+[ext_resource type="Script" uid="uid://dhmhy3w2nubq7" path="res://scripts/how_to_play.gd" id="1_7xqkc"]
 
 [sub_resource type="GDScript" id="GDScript_vc7r1"]
 script/source = "extends Button
