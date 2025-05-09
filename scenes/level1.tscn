@@ -554,3 +554,14 @@ position = Vector2(6984, 37)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 volume_db = 1.0
 autoplay = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 142.0
+offset_top = 121.0
+offset_right = 283.0
+offset_bottom = 161.0
+theme_override_font_sizes/normal_font_size = 7
+bbcode_enabled = true
+text = "• Press [color=yellow]E[/color] near objects/NPCs to interact
+• Press [color=yellow]SPACE[/color] to advance conversations
+"

@@ -1,10 +1,10 @@
+RichTextLabel
+Label
 CollisionShape2D
 Area2D
 AnimatedSprite2D
 CharacterBody2D
 Button
-RichTextLabel
-Label
 Panel
 Control
 VBoxContainer
