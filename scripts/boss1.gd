@@ -40,6 +40,7 @@ func _physics_process(delta: float) -> void:
 			# Jump up to reach player on higher platforms
 			if vertical_distance < -50 and horizontal_distance < 200 and _is_platform_above():
 				velocity.y = jump_velocity
+				$AnimatedSprite2D.play("walk")
 				can_jump = false
 			# Drop down when player is below
 			elif vertical_distance > 100 and _can_drop_down():

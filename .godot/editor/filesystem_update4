@@ -1,0 +1,10 @@
+res://scenes/level1.tscn
+res://dialogue/dialogue.tscn
+res://scenes/main_manu.tscn
+res://scenes/player.tscn
+res://scenes/level2.tscn
+res://scenes/boss1.tscn
+res://scripts/boss1.gd
+res://scenes/boss2.tscn
+res://scripts/boss_2.gd
+res://scenes/how_to_play.tscn

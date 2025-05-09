@@ -12,9 +12,9 @@ script = ExtResource("1_cjqcn")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_left = 237.0
+offset_left = 232.0
 offset_top = 171.0
-offset_right = 256.0
+offset_right = 253.0
 offset_bottom = 179.0
 scale = Vector2(4, 4)
 texture = ExtResource("1_tufwk")
@@ -26,17 +26,18 @@ patch_margin_bottom = 3
 [node name="Name" type="RichTextLabel" parent="NinePatchRect"]
 layout_mode = 0
 offset_left = 1.5
-offset_top = 1.0
+offset_top = 0.5
 offset_right = 170.5
-offset_bottom = 41.0
+offset_bottom = 40.5
 scale = Vector2(0.07, 0.07)
+theme_override_font_sizes/normal_font_size = 17
 text = "Name:"
 
 [node name="Text" type="RichTextLabel" parent="NinePatchRect"]
 layout_mode = 0
-offset_left = 2.0
-offset_top = 2.5
-offset_right = 302.0
-offset_bottom = 82.5
+offset_left = 1.75
+offset_top = 2.75
+offset_right = 356.75
+offset_bottom = 82.75
 scale = Vector2(0.05, 0.05)
 text = "Chatting...."
