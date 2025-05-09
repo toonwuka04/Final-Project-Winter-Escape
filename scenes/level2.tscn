@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://bd3278qgy1riq"]
+[gd_scene load_steps=13 format=4 uid="uid://bd3278qgy1riq"]
 
 [ext_resource type="PackedScene" uid="uid://bdavk4m3x58kq" path="res://scenes/player.tscn" id="1_7tsqt"]
 [ext_resource type="Texture2D" uid="uid://86wsp7hogouc" path="res://assets/wintertiles/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg" id="1_e60l1"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bk3dx3u0lho34" path="res://scenes/killzone.tscn" id="5_dr225"]
 [ext_resource type="PackedScene" uid="uid://0ljt1njwcx5l" path="res://scenes/next_level.tscn" id="6_37que"]
 [ext_resource type="PackedScene" uid="uid://dvqludeivnk4o" path="res://scenes/boss2.tscn" id="7_5qb7i"]
+[ext_resource type="AudioStream" uid="uid://dooiqcqyq70cx" path="res://assets/energetic-fast-violin-driven-music-260272.mp3" id="7_cndyp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60737"]
 texture = ExtResource("2_ecwcl")
@@ -9136,8 +9137,10 @@ position = Vector2(600, 200)
 shape = SubResource("WorldBoundaryShape2D_r47x0")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_cndyp")
 volume_db = 1.0
 autoplay = true
+parameters/looping = true
 
 [node name="next_level" parent="." instance=ExtResource("6_37que")]
 position = Vector2(7063, 55)
