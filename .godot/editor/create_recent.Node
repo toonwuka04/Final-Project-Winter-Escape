@@ -1,7 +1,9 @@
-CanvasLayer
 Label
-Control
+AudioStreamPlayer2D
+ColorRect
 Sprite2D
+CanvasLayer
+Control
 StaticBody2D
 Timer
 CollisionShape2D
@@ -10,6 +12,3 @@ RichTextLabel
 AnimatedSprite2D
 CharacterBody2D
 Camera2D
-Button
-Panel
-VBoxContainer

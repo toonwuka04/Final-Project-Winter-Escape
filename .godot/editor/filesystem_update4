@@ -17,3 +17,10 @@ res://scenes/bossLvl3.tscn
 res://scenes/points.tscn
 res://scenes/global.tscn
 res://scripts/bossLvl3.gd
+res://scenes/level5.tscn
+res://scenes/level6.tscn
+res://scenes/level7.tscn
+res://scenes/level8.tscn
+res://scenes/level9.tscn
+res://scripts/next_level.gd
+res://dialogue/dialogue.tscn

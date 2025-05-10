@@ -320,7 +320,7 @@ position = Vector2(71, -65)
 sprite_frames = SubResource("SpriteFrames_3e6vm")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.43845
+frame_progress = 0.479935
 
 [node name="detection_area" type="Area2D" parent="."]
 collision_layer = 2
