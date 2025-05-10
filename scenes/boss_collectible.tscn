@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://if17q1otn4ph"]
+
+[ext_resource type="Texture2D" uid="uid://bn07hw1lm4sgj" path="res://assets/images/soulpic.png" id="1_gres8"]
+
+[node name="boss_collectible" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, -14)
+scale = Vector2(0.139648, 0.121559)
+texture = ExtResource("1_gres8")

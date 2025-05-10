@@ -10,7 +10,7 @@ var player_inattack_range = false
 var damage
 var dead = false
 var can_take_damage = true
-
+@onready var soul = $boss_collectible
 
 # Jump parameters
 var can_jump = true
@@ -120,10 +120,30 @@ func deal_with_damage():
 			$take_damage_cooldown.start()
 			can_take_damage = false
 			print("enemy health: " + str(health))
+			# deal with death
 			if health <= 0:
-				$AnimatedSprite2D.play("attack")
-				self.queue_free()
+				dead = true
+				
+				$AnimatedSprite2D.play("death")
+				$AnimatedSprite2D.visible = false
+				$enemy_hitbox/ehitbox_collision.disabled = true
+				$detection_area/detection_collision.disabled = true
+				await get_tree().create_timer(1.0).timeout
+				drop_soul()
+				#xself.queue_free()x
+			
 
-
+func drop_soul():
+	soul.visible = true
+	soul_collect()
+	
+func soul_collect():
+	get_tree().create_timer(1.5).timeout
+	soul.visible = false
+	global.current_slimes += 1
+	print(global.current_slimes)
+	#player.collect()
+	queue_free()
+	
 func _on_take_damage_cooldown_timeout() -> void:
 	can_take_damage = true

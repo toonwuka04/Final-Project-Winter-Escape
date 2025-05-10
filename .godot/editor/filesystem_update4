@@ -11,3 +11,5 @@ res://scripts/boss1.gd
 res://scenes/level4.tscn
 res://scripts/player.gd
 res://scenes/bossLvl3.gd
+res://scenes/boss_collectible.tscn
+res://scripts/global.gd

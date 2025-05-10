@@ -268,12 +268,11 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="detection_area" type="Area2D" parent="."]
-position = Vector2(64, -46)
 collision_layer = 2
 collision_mask = 2
 
 [node name="detection_collision" type="CollisionShape2D" parent="detection_area"]
-position = Vector2(0, -36)
+position = Vector2(61, -87)
 shape = SubResource("CircleShape2D_dyat2")
 
 [node name="enemy_collision" type="CollisionShape2D" parent="."]
@@ -285,7 +284,7 @@ collision_layer = 2
 collision_mask = 3
 
 [node name="ehitbox_collision" type="CollisionShape2D" parent="enemy_hitbox"]
-position = Vector2(60, -45)
+position = Vector2(59, -47)
 shape = SubResource("CapsuleShape2D_wk6ab")
 
 [node name="take_damage_cooldown" type="Timer" parent="."]

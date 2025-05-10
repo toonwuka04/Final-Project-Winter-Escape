@@ -80,7 +80,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_player_hitbox_body_entered(body: Node2D) -> void:
-	if body.has_method("enemy"):
+	if body.has_method("enemy") and !body.dead:
 		print("boss entered")
 		enemy_in_range = true
 
@@ -92,7 +92,7 @@ func _on_player_hitbox_body_exited(body: Node2D) -> void:
 
 func enemy_attack():
 	if enemy_in_range and enemy_attack_cooldown == true:
-		health -= 15
+		health -= 1
 		enemy_attack_cooldown = false
 		$attack_cooldown.start()
 		print("Health: " + str(health))

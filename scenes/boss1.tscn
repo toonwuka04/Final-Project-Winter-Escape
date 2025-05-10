@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://dp62xrj8c3e0r"]
+[gd_scene load_steps=44 format=3 uid="uid://dp62xrj8c3e0r"]
 
 [ext_resource type="Script" path="res://scripts/boss1.gd" id="1_5ada7"]
 [ext_resource type="Texture2D" uid="uid://bqcxdolung6uf" path="res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_1.png" id="2_uyf14"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bumfy7obbop4y" path="res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Idle.png" id="4_hb15o"]
 [ext_resource type="Texture2D" uid="uid://df8hbegjvhisf" path="res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Jump.png" id="5_ma32w"]
 [ext_resource type="Texture2D" uid="uid://darr40sj1hlgt" path="res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Walk.png" id="6_vufa7"]
+[ext_resource type="PackedScene" uid="uid://if17q1otn4ph" path="res://scenes/boss_collectible.tscn" id="7_l8m01"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vxv1f"]
 atlas = ExtResource("2_uyf14")
@@ -304,6 +305,9 @@ shape = SubResource("CapsuleShape2D_ep7wg")
 
 [node name="take_damage_cooldown" type="Timer" parent="."]
 wait_time = 0.9
+
+[node name="boss_collectible" parent="." instance=ExtResource("7_l8m01")]
+visible = false
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
