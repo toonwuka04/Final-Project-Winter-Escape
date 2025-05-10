@@ -1,14 +1,13 @@
-RichTextLabel
-Label
+Timer
 CollisionShape2D
 Area2D
+RichTextLabel
+Label
 AnimatedSprite2D
 CharacterBody2D
-Timer
 Camera2D
 Button
 Panel
 Control
 VBoxContainer
 CanvasGroup
-NinePatchRect

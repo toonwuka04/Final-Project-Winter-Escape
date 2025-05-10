@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://dp62xrj8c3e0r"]
+[gd_scene load_steps=43 format=3 uid="uid://dp62xrj8c3e0r"]
 
 [ext_resource type="Script" path="res://scripts/boss1.gd" id="1_5ada7"]
 [ext_resource type="Texture2D" uid="uid://bqcxdolung6uf" path="res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_1.png" id="2_uyf14"]
@@ -263,9 +263,14 @@ animations = [{
 radius = 110.018
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_33gmv"]
-height = 72.0
+radius = 15.0
+height = 64.0
 
-[node name="Boss1" type="CharacterBody2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ep7wg"]
+radius = 19.0
+height = 68.0
+
+[node name="Boss1" type="CharacterBody2D" groups=["Enemy"]]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_5ada7")
@@ -273,9 +278,9 @@ script = ExtResource("1_5ada7")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -65)
 sprite_frames = SubResource("SpriteFrames_cpjip")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.180788
+frame_progress = 0.0817818
 
 [node name="detection_area" type="Area2D" parent="."]
 collision_layer = 2
@@ -286,8 +291,22 @@ position = Vector2(-1, -64)
 shape = SubResource("CircleShape2D_rsm7t")
 
 [node name="enemy_collision" type="CollisionShape2D" parent="."]
-position = Vector2(-3, -36)
+position = Vector2(1, -33)
 shape = SubResource("CapsuleShape2D_33gmv")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 3
+
+[node name="ehitbox_collision" type="CollisionShape2D" parent="enemy_hitbox"]
+position = Vector2(0, -33)
+shape = SubResource("CapsuleShape2D_ep7wg")
+
+[node name="take_damage_cooldown" type="Timer" parent="."]
+wait_time = 0.9
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_entered"]
+[connection signal="body_exited" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]

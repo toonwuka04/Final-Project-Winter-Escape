@@ -1,73 +1,125 @@
 extends CharacterBody2D
 
-# Movement Parameters
 var speed = 100
-var detection_radius = 300  # Distance at which the enemy starts chasing the player
-var attack_radius = 50      # Distance at which the enemy attacks the player
-
-var player = null
+var jump_velocity = -400  # Stronger jump for platform clearing
 var player_chase = false
-var attack_timer = 0.0  # Timer for controlling attack cooldown
-var attack_cooldown = 1.0  # Time between attacks
+var player = null
 
-# States
-var is_attacking = false
+var health = 100
+var player_inattack_range = false
+var damage
+var dead = false
+var can_take_damage = true
 
-# Called every frame
+# Jump parameters
+var can_jump = true
+var jump_cooldown = 1.0
+var jump_timer = 0.0
+
+# Follow parameters
+var max_follow_height = 150
+var min_jump_distance = 80
+
+func _ready() -> void:
+	dead = false
+
 func _physics_process(delta: float) -> void:
-	# If the player is within detection range, start chasing
-	if player_chase and player:
-		var direction = (player.position - position).normalized()
-		var distance_to_player = position.distance_to(player.position)
+	deal_with_damage()
+	if !dead: 
+		$detection_area/detection_collision.disabled = false
+		# Apply gravity
+		if not is_on_floor():
+			velocity.y += get_gravity().y * delta  # Only use vertical gravity
+			$AnimatedSprite2D.play("jump")
 		
-		# Move towards the player if it's in detection range
-		if distance_to_player > attack_radius:
+		# Jump cooldown
+		if not can_jump:
+			jump_timer += delta
+			if jump_timer >= jump_cooldown:
+				can_jump = true
+				jump_timer = 0.0
+		
+		if player_chase and player:
+			var direction = (player.position - position).normalized()
+			var horizontal_distance = abs(player.position.x - position.x)
+			var vertical_distance = player.position.y - position.y
+			
+			# Horizontal movement
 			velocity.x = direction.x * speed
-			velocity.y = direction.y * speed
-			$AnimatedSprite2D.play("walk")  # Play walking animation
+			
+			# Improved platform jumping
+			if is_on_floor() and can_jump:
+				# Jump up to reach player on higher platforms
+				if vertical_distance < -50 and horizontal_distance < 200 and _is_platform_above():
+					velocity.y = jump_velocity
+					$AnimatedSprite2D.play("walk")
+					can_jump = false
+				# Drop down when player is below
+				elif vertical_distance > 100 and _can_drop_down():
+					velocity.y = jump_velocity * 0.3
+					can_jump = false
+			
+			$AnimatedSprite2D.play("walk")
+			$AnimatedSprite2D.flip_h = direction.x < 0
 		else:
-			# If within attack range, attack the player
-			if not is_attacking and attack_timer <= 0:
-				# Use await directly when calling the async function
-				await attack_player()  # Correct usage of await
+			velocity.x = move_toward(velocity.x, 0, speed)
+			$AnimatedSprite2D.play("idle")
 		
-		# Flip the enemy sprite based on direction
-		$AnimatedSprite2D.flip_h = direction.x < 0
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-		velocity.y = move_toward(velocity.y, 0, speed)
-		$AnimatedSprite2D.play("idle")  # Play idle animation
-	
-	move_and_slide()
+		move_and_slide()
+	if dead:
+		$detection_area/detection_collision.disabled = true
 
-	# Cooldown management for attacking
-	if attack_timer > 0:
-		attack_timer -= delta
+func _is_platform_above() -> bool:
+	var space = get_world_2d().direct_space_state
+	var query = PhysicsRayQueryParameters2D.create(
+		position,
+		position + Vector2(0, -150),  # Check above for platforms
+		collision_mask
+	)
+	return space.intersect_ray(query).is_empty() == false
 
-# Attack the player
-func attack_player() -> void:
-	is_attacking = true
-	$AnimatedSprite2D.play("attack")  # Play attack animation
-	
-	# Example: Deal damage to player here, or any attack logic
-	if player and player.is_in_group("Player"):
-		print("Attacking Player!")
-		# Deal damage to player (You can implement damage logic in the player script)
-		#player.take_damage(10)  # This is an example. Make sure your player script has a `take_damage` method.
+func _can_drop_down() -> bool:
+	var space = get_world_2d().direct_space_state
+	var query = PhysicsRayQueryParameters2D.create(
+		position,
+		position + Vector2(0, 20),  # Check below for platforms
+		collision_mask
+	)
+	return space.intersect_ray(query).is_empty() == false
 
-	# Wait until the attack animation finishes
-	await $AnimatedSprite2D.animation_finished  # Wait until the attack animation finishes
-	is_attacking = false
-	attack_timer = attack_cooldown  # Reset attack cooldown
-
-# Detect when player enters the area
-func _on_area_2d_body_entered(body):
+func _on_detection_area_body_entered(body: Node2D):
 	if body.is_in_group("Player"):
 		player = body
 		player_chase = true
 
-# Detect when player exits the area
-func _on_area_2d_body_exited(body):
+func _on_detection_area_body_exited(body: Node2D):
 	if body.is_in_group("Player"):
 		player = null
 		player_chase = false
+
+func enemy():
+	pass
+
+
+func _on_enemy_hitbox_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Player"):
+		player_inattack_range = true
+
+
+func _on_enemy_hitbox_body_exited(body: Node2D) -> void:
+	if body.is_in_group("Player"):
+		player_inattack_range = false
+
+func deal_with_damage():
+	if player_inattack_range and global.player_current_attack == true:
+		if can_take_damage:
+			health -= 20
+			$take_damage_cooldown.start()
+			can_take_damage = false
+			print("enemy health: " + str(health))
+			if health <= 0:
+				$AnimatedSprite2D.play("death")
+				self.queue_free()
+
+func _on_take_damage_cooldown_timeout() -> void:
+	can_take_damage = true

@@ -526,7 +526,7 @@ tile_map_data = PackedByteArray("AAD4/wkAAAAFAA4AAAD4/woAAAAFAA4AAAD4/wsAAAAFAA4
 tile_set = SubResource("TileSet_48dpb")
 
 [node name="Boss1" parent="." instance=ExtResource("7_5i14p")]
-position = Vector2(906, 177)
+position = Vector2(104, 67)
 collision_mask = 3
 
 [node name="npc" parent="." instance=ExtResource("6_ogsji")]
@@ -556,6 +556,7 @@ position = Vector2(6984, 37)
 stream = ExtResource("8_cp8s2")
 volume_db = 1.0
 autoplay = true
+parameters/looping = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 142.0

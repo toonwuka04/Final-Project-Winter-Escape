@@ -11,11 +11,15 @@ config_version=5
 [application]
 
 config/name="Final"
-run/main_scene="res://scenes/main_manu.tscn"
-config/features=PackedStringArray("4.4", "Mobile")
+run/main_scene="res://scenes/level3.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 config/icon="res://assets/images/icon.svg"
+
+[autoload]
+
+global="*res://scripts/global.gd"
 
 [input]
 

@@ -1,6 +1,6 @@
-[gd_scene load_steps=40 format=3 uid="uid://cm0ool8qt3bs"]
+[gd_scene load_steps=41 format=3 uid="uid://cm0ool8qt3bs"]
 
-[ext_resource type="Script" uid="uid://b6vah1w33y4pl" path="res://scenes/bossLvl3.gd" id="1_rxe52"]
+[ext_resource type="Script" path="res://scenes/bossLvl3.gd" id="1_rxe52"]
 [ext_resource type="Texture2D" uid="uid://bmrrhfj5gc0nj" path="res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png" id="2_j6i67"]
 [ext_resource type="Texture2D" uid="uid://dqdq0w8w00lk7" path="res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png" id="3_wb251"]
 [ext_resource type="Texture2D" uid="uid://debqgmuhmc2sg" path="res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png" id="4_jxy6a"]
@@ -249,30 +249,49 @@ animations = [{
 radius = 113.159
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_awfp6"]
-radius = 16.0
-height = 100.0
+radius = 14.0
+height = 82.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wk6ab"]
+radius = 23.0
+height = 86.0
+
+[node name="Boss3" type="CharacterBody2D" groups=["Enemy"]]
+position = Vector2(-63, 2)
 script = ExtResource("1_rxe52")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(71, -91)
 scale = Vector2(1.38281, 1.39062)
 sprite_frames = SubResource("SpriteFrames_3e6vm")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.685134
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="detection_area" type="Area2D" parent="."]
 position = Vector2(64, -46)
+collision_layer = 2
+collision_mask = 2
 
-[node name="detection_collision" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2, 1)
+[node name="detection_collision" type="CollisionShape2D" parent="detection_area"]
+position = Vector2(0, -36)
 shape = SubResource("CircleShape2D_dyat2")
 
 [node name="enemy_collision" type="CollisionShape2D" parent="."]
-position = Vector2(67, -46)
+position = Vector2(58, -43)
 shape = SubResource("CapsuleShape2D_awfp6")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[node name="enemy_hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 3
+
+[node name="ehitbox_collision" type="CollisionShape2D" parent="enemy_hitbox"]
+position = Vector2(60, -45)
+shape = SubResource("CapsuleShape2D_wk6ab")
+
+[node name="take_damage_cooldown" type="Timer" parent="."]
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_entered"]
+[connection signal="body_exited" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]
