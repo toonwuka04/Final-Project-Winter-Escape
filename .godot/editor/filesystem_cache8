@@ -1,8 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746837498
-bossLvl3.tscn::PackedScene::166693900099892380::1746837308::0::1::::<><>::res://scenes/bossLvl3.gd<>uid://bmrrhfj5gc0nj::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png<>uid://dqdq0w8w00lk7::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png<>uid://debqgmuhmc2sg::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png<>uid://b1yen8xsi8p2w::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Run.png<>uid://c1s10skpwp8xc::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Walk.png
+::res://::1746840486
 README.md::TextFile::-1::1745946860::0::1::::<><>::
-::res://assets/::1746834123
+::res://assets/::1746838734
 fast-paced-energetic-acoustic-music-259766.mp3::AudioStreamMP3::587354439022017193::1746820286::1746820770::1::::<><>::
 flower-asset.jpg::CompressedTexture2D::6804694432735429477::1745124885::1745181818::1::::<><>::
 other-loot-asset.jpg::CompressedTexture2D::9098398946254692621::1745124885::1745181818::1::::<><>::
@@ -111,7 +110,7 @@ Magic_arrow.png::CompressedTexture2D::1251904624393093668::1745124885::174518181
 Magic_sphere.png::CompressedTexture2D::604495516081676865::1745124885::1745181817::1::::<><>::
 Run.png::CompressedTexture2D::3495929891547016355::1745124885::1745181817::1::::<><>::
 Walk.png::CompressedTexture2D::7195441791132775939::1745124885::1745181817::1::::<><>::
-::res://assets/images/::1746837546
+::res://assets/images/::1746838734
 BG_01.png::CompressedTexture2D::3918446704322917487::1744922954::1745181818::1::::<><>::
 dialogueasset.png::CompressedTexture2D::6013296524227497203::1746162071::1746162071::1::::<><>::
 godot file 2.png::CompressedTexture2D::7249421414859638080::1744916512::1745181820::1::::<><>::
@@ -130,32 +129,33 @@ dialogue.tscn::PackedScene::6221527311047498299::1746830543::0::1::::<><>::uid:/
 dialogueplayer.gd::GDScript::-1::1746166211::0::1::::<>Control<>::
 guide_dialogue1.json::JSON::-1::1746165757::0::1::::<><>::
 ::res://levels/::1744925424
-::res://scenes/::1746837537
+::res://scenes/::1746840486
 area_2d.gd::GDScript::-1::1746830543::0::1::::<>Area2D<>::
-boss1.tscn::PackedScene::8277771756393488979::1746837308::0::1::::<><>::res://scripts/boss1.gd<>uid://bqcxdolung6uf::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_1.png<>uid://comou1psxkc7m::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Dead.png<>uid://bumfy7obbop4y::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Idle.png<>uid://df8hbegjvhisf::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Jump.png<>uid://darr40sj1hlgt::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Walk.png
-boss2.tscn::PackedScene::8666961578482806728::1746837308::0::1::::<><>::res://scripts/boss_2.gd<>uid://bvv073rogxtyt::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Dead.png<>uid://1p5fo28dkwck::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Idle.png<>uid://dflxli1uhganb::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Jump.png<>uid://dcoqbnvxqaoxm::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Run.png
-bossLvl3.gd::GDScript::-1::1746837012::0::1::::<>CharacterBody2D<>::
+boss1.tscn::PackedScene::8277771756393488979::1746840263::0::1::::<><>::res://scripts/boss1.gd<>uid://bqcxdolung6uf::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_1.png<>uid://comou1psxkc7m::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Dead.png<>uid://bumfy7obbop4y::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Idle.png<>uid://df8hbegjvhisf::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Jump.png<>uid://darr40sj1hlgt::::res://assets/free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Walk.png<>uid://if17q1otn4ph::::res://scenes/boss_collectible.tscn
+boss2.tscn::PackedScene::8666961578482806728::1746840263::0::1::::<><>::res://scripts/boss_2.gd<>uid://bvv073rogxtyt::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Dead.png<>uid://1p5fo28dkwck::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Idle.png<>uid://dflxli1uhganb::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Jump.png<>uid://dcoqbnvxqaoxm::::res://assets/free-wizard-sprite-sheets-pixel-art/Fire vizard/Run.png
+bossLvl3.gd::GDScript::-1::1746840261::0::1::::<>CharacterBody2D<>::
+bossLvl3.tscn::PackedScene::166693900099892380::1746840491::0::1::::<><>::res://scenes/bossLvl3.gd<>uid://bmrrhfj5gc0nj::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png<>uid://dqdq0w8w00lk7::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png<>uid://debqgmuhmc2sg::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png<>uid://b1yen8xsi8p2w::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Run.png<>uid://c1s10skpwp8xc::::res://assets/free-wizard-sprite-sheets-pixel-art/Lightning Mage/Walk.png
+boss_collectible.tscn::PackedScene::573469306291991121::1746840265::0::1::::<><>::uid://bn07hw1lm4sgj::::res://assets/images/soulpic.png
 how_to_play.tscn::PackedScene::3514528646018036792::1746830543::0::1::::<><>::uid://dhmhy3w2nubq7::::res://scripts/how_to_play.gd
 killzone.tscn::PackedScene::3146336424125980565::1746137577::0::1::::<><>::uid://boj7lmry8hor0::::res://scripts/killzone.gd
-level1.tscn::PackedScene::4050437281353418882::1746837309::0::1::::<><>::uid://cfdyud8hncm7n::::res://assets/wintertiles/game_background_3. 2.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://h12cppjerxf2::::res://scenes/npc.tscn<>uid://dp62xrj8c3e0r::::res://scenes/boss1.tscn<>uid://imrv26gu7rt6::::res://assets/fast-paced-energetic-acoustic-music-259766.mp3
-level2.tscn::PackedScene::2656488054223674996::1746837310::0::1::::<><>::uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://86wsp7hogouc::::res://assets/wintertiles/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg<>uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://dvqludeivnk4o::::res://scenes/boss2.tscn<>uid://dooiqcqyq70cx::::res://assets/energetic-fast-violin-driven-music-260272.mp3
-level3.tscn::PackedScene::8415868638230450749::1746837311::0::1::::<><>::uid://caol7tpctq3oc::::res://assets/images/level3bg.jpg<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>res://scenes/area_2d.gd<>uid://cm0ool8qt3bs::::res://bossLvl3.tscn
-level4.tscn::PackedScene::1072737593944635385::1746837311::0::1::::<><>::
-main_manu.tscn::PackedScene::8854163223543125175::1746837311::0::1::::<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf<>uid://drcda25n38b5d::::res://assets/horror-spooky-piano-254402.mp3
+level1.tscn::PackedScene::4050437281353418882::1746840263::0::1::::<><>::uid://cfdyud8hncm7n::::res://assets/wintertiles/game_background_3. 2.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://h12cppjerxf2::::res://scenes/npc.tscn<>uid://dp62xrj8c3e0r::::res://scenes/boss1.tscn<>uid://imrv26gu7rt6::::res://assets/fast-paced-energetic-acoustic-music-259766.mp3
+level2.tscn::PackedScene::2656488054223674996::1746840265::0::1::::<><>::uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://86wsp7hogouc::::res://assets/wintertiles/360_F_641790743_ZFetNubXx3Z1euIXj4H7I0lDy4KtaxWI.jpg<>uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bk3dx3u0lho34::::res://scenes/killzone.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>uid://dvqludeivnk4o::::res://scenes/boss2.tscn<>uid://dooiqcqyq70cx::::res://assets/energetic-fast-violin-driven-music-260272.mp3
+level3.tscn::PackedScene::8415868638230450749::1746840486::0::1::::<><>::uid://caol7tpctq3oc::::res://assets/images/level3bg.jpg<>uid://nflbqm4bdcr3::::res://assets/wintertiles/Enviroment.png<>uid://bdavk4m3x58kq::::res://scenes/player.tscn<>uid://0ljt1njwcx5l::::res://scenes/next_level.tscn<>res://scenes/area_2d.gd<>uid://cm0ool8qt3bs::::res://scenes/bossLvl3.tscn
+level4.tscn::PackedScene::1072737593944635385::1746840265::0::1::::<><>::
+main_manu.tscn::PackedScene::8854163223543125175::1746840265::0::1::::<><>::uid://bv3eik512ddgp::::res://assets/images/BG_01.png<>res://scripts/main_manu.gd<>uid://cl74rg03hnhcj::::res://assets/Winter Trendy.ttf<>uid://drcda25n38b5d::::res://assets/horror-spooky-piano-254402.mp3
 next_level.tscn::PackedScene::1778011015392543923::1746830543::0::1::::<><>::uid://bh0q31pxmyfeq::::res://scripts/next_level.gd<>uid://cn4gplyfwsxf8::::res://assets/images/star.png
 npc.tscn::PackedScene::546639468901562697::1746830543::0::1::::<><>::uid://b2nbe1ahupmel::::res://assets/images/NPC_Ronin.png<>uid://cq5vahagtpgtq::::res://scripts/npc.gd<>uid://cuv0v7t7qk268::::res://dialogue/dialogue.tscn
-player.tscn::PackedScene::2598281672413295304::1746837308::0::1::::<><>::res://scripts/player.gd<>uid://cyjlfu8tj2mf5::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Idle.png<>uid://dsnkisr5xx3iv::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Attack.png<>uid://da688elg0tqfr::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Walk.png
-boss_collectible.tscn::PackedScene::573469306291991121::1746837490::0::1::::<><>::
+player.tscn::PackedScene::2598281672413295304::1746840263::0::1::::<><>::res://scripts/player.gd<>uid://cyjlfu8tj2mf5::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Idle.png<>uid://dsnkisr5xx3iv::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Attack.png<>uid://da688elg0tqfr::::res://assets/free-schoolgirls-anime-character-pixel-sprite-pack/Girl_3/Walk.png
 soulpic.png::CompressedTexture2D::4001167628841634976::1746837536::1746837537::1::::<><>::
 splash_screen_manager.tscn::PackedScene::4330619208763095514::1746137577::0::1::::<><>::uid://j7pl40yhcjfp::::res://scripts/splash_screen_manager.gd<>uid://dbjw580r07tae::::res://assets/images/godot file 2.png
-::res://scripts/::1746837050
-boss1.gd::GDScript::-1::1746836589::0::1::::<>CharacterBody2D<>::
-boss_2.gd::GDScript::-1::1746837050::0::1::::<>CharacterBody2D<>::
-global.gd::GDScript::-1::1746827496::0::1::::<>Node<>::
+::res://scripts/::1746840380
+boss1.gd::GDScript::-1::1746840261::0::1::::<>CharacterBody2D<>::
+boss_2.gd::GDScript::-1::1746840261::0::1::::<>CharacterBody2D<>::
+global.gd::GDScript::-1::1746838148::0::1::::<>Node<>::
 how_to_play.gd::GDScript::-1::1746227279::0::1::::<>Control<>::
 killzone.gd::GDScript::-1::1746668350::0::1::::<>Area2D<>::
 main_manu.gd::GDScript::-1::1746224861::0::1::::<>Control<>::
 next_level.gd::GDScript::-1::1746137577::0::1::::<>Area2D<>::
 npc.gd::GDScript::-1::1746666226::0::1::::<>CharacterBody2D<>::
-player.gd::GDScript::-1::1746836721::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1746839317::0::1::::<>CharacterBody2D<>::
 splash_screen_manager.gd::GDScript::-1::1744917169::0::1::::<>Control<>::

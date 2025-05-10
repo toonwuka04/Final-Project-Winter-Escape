@@ -120,11 +120,31 @@ func deal_with_damage():
 			$take_damage_cooldown.start()
 			can_take_damage = false
 			print("enemy health: " + str(health))
+			# deal with death
 			if health <= 0:
-				await get_tree().create_timer(1.0).timeout
+				dead = true
 				$AnimatedSprite2D.play("death")
+				await get_tree().create_timer(1.0).timeout
+				$AnimatedSprite2D.visible = false
+				$enemy_hitbox/ehitbox_collision.disabled = true
+				$detection_area/detection_collision.disabled = true
+				
+				#drop_soul()
+				global.update_score(1)
+				print(global.current_slimes)
 				self.queue_free()
+			
 
-
+#func drop_soul():
+	#soul.visible = true
+	#soul_collect()
+	#
+#func soul_collect():
+	#get_tree().create_timer(1.5).timeout
+	#soul.visible = false
+	#
+	##player.collect()
+	#queue_free()
+	
 func _on_take_damage_cooldown_timeout() -> void:
 	can_take_damage = true

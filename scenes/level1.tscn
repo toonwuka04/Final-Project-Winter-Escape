@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://bxycd0pf3medm"]
+[gd_scene load_steps=13 format=4 uid="uid://bxycd0pf3medm"]
 
 [ext_resource type="Texture2D" uid="uid://cfdyud8hncm7n" path="res://assets/wintertiles/game_background_3. 2.png" id="1_4w2lv"]
 [ext_resource type="PackedScene" uid="uid://bdavk4m3x58kq" path="res://scenes/player.tscn" id="1_jivsy"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bk3dx3u0lho34" path="res://scenes/killzone.tscn" id="4_vfnwv"]
 [ext_resource type="PackedScene" uid="uid://0ljt1njwcx5l" path="res://scenes/next_level.tscn" id="5_e6sxf"]
 [ext_resource type="PackedScene" uid="uid://h12cppjerxf2" path="res://scenes/npc.tscn" id="6_ogsji"]
+[ext_resource type="PackedScene" uid="uid://cdtjdver1236n" path="res://scenes/global.tscn" id="6_swexn"]
 [ext_resource type="PackedScene" uid="uid://dp62xrj8c3e0r" path="res://scenes/boss1.tscn" id="7_5i14p"]
 [ext_resource type="AudioStream" uid="uid://imrv26gu7rt6" path="res://assets/fast-paced-energetic-acoustic-music-259766.mp3" id="8_cp8s2"]
 
@@ -542,6 +543,8 @@ zoom = Vector2(2.75, 2.75)
 limit_bottom = 314
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Global" parent="Player" instance=ExtResource("6_swexn")]
 
 [node name="Killzone" parent="." instance=ExtResource("4_vfnwv")]
 position = Vector2(592, 357)

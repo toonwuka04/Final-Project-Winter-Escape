@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dnmmsqpgi3rag"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 111.0
+offset_bottom = 33.0
+text = "Souls Collected: "

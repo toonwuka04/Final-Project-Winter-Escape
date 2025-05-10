@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdtjdver1236n"]
+
+[ext_resource type="Script" path="res://scripts/global.gd" id="1_8tjc1"]
+
+[node name="Global" type="CanvasLayer"]
+script = ExtResource("1_8tjc1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 150.0
+offset_bottom = 38.0
+text = "Souls Collected: 
+"

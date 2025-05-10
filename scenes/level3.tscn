@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bdavk4m3x58kq" path="res://scenes/player.tscn" id="3_qyetb"]
 [ext_resource type="PackedScene" uid="uid://0ljt1njwcx5l" path="res://scenes/next_level.tscn" id="5_6lxtr"]
 [ext_resource type="Script" path="res://scenes/area_2d.gd" id="5_7uttt"]
-[ext_resource type="PackedScene" uid="uid://cm0ool8qt3bs" path="res://bossLvl3.tscn" id="7_b72m1"]
+[ext_resource type="PackedScene" uid="uid://cm0ool8qt3bs" path="res://scenes/bossLvl3.tscn" id="7_b72m1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyq2n"]
 texture = ExtResource("2_qyetb")
@@ -531,7 +531,7 @@ tile_map_data = PackedByteArray("AAD9/xsAAAAFAA4AAAD9/xwAAAAFAA4AAAD9/x0AAAAFAA4
 tile_set = SubResource("TileSet_7uttt")
 
 [node name="bossLvl3" parent="." instance=ExtResource("7_b72m1")]
-position = Vector2(431, 487)
+position = Vector2(872, 496)
 collision_layer = 2
 collision_mask = 3
 

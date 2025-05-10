@@ -13,3 +13,7 @@ res://scripts/player.gd
 res://scenes/bossLvl3.gd
 res://scenes/boss_collectible.tscn
 res://scripts/global.gd
+res://scenes/bossLvl3.tscn
+res://scenes/points.tscn
+res://scenes/global.tscn
+res://scripts/bossLvl3.gd

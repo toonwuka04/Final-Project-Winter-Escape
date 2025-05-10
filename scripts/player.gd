@@ -17,6 +17,7 @@ var health = 100
 var player_alive = true
 var attack_inprogress = false
 
+	
 
 func _physics_process(delta: float) -> void:
 	# Update timers
